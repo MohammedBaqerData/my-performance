@@ -34,3 +34,8 @@ tr.sub td{font-weight:600;background:#FAF9F5}tr.total td{font-weight:700;border-
 .pill{display:inline-block;margin-top:8px;font-size:13px;background:#FDF3E3;color:#9A5A13;padding:6px 12px;border-radius:20px}
 .card p{line-height:1.55}
 @media(max-width:900px){.app{flex-direction:column}.side{width:auto}nav{flex-direction:row;flex-wrap:wrap}.sync{margin-top:0}main{padding:20px}.grid4{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}
+.l3{background:#C9DDD5}.chg.up{color:#1F7A5C}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin:16px 0}
+.form label{display:flex;flex-direction:column;font-size:13px;color:#6B685F;gap:6px}
+.form input{padding:10px 12px;border:1px solid #D8D4C8;border-radius:10px;font:inherit;font-size:15px;color:#1B1D1A}
+button.btn{border:none;cursor:pointer;font:inherit;font-weight:600}
