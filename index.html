@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Performance – monthly health check for small businesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><div class="mark">MP</div><div><b>My Performance</b><span>Karak House Café</span></div></div>
+    <nav id="nav">
+      <a data-tab="overview" class="on">📊 Overview</a>
+      <a data-tab="income">📈 Income statement</a>
+      <a data-tab="balance">⚖️ Balance sheet</a>
+      <a data-tab="cash">💵 Cash flow</a>
+      <a data-tab="ai">🤖 AI insights</a>
+      <a data-tab="excel">📗 Excel sync</a>
+    </nav>
+    <div class="sync"><span class="dot"></span> Synced with Excel · 2 min ago</div>
+  </aside>
+
+  <main>
+    <header class="top">
+      <div><p class="kick">Monthly health check</p><h1>October 2026</h1></div>
+      <select id="month"><option>October 2026</option><option>September 2026</option></select>
+    </header>
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="tab on">
+      <div class="grid4">
+        <div class="kpi"><p>Health score</p><b class="big good">72<small>/100</small></b><span class="chg down">▼ 6 from September</span></div>
+        <div class="kpi"><p>Sales</p><b class="big">BHD 8,450</b><span class="chg down">▼ 7.1% vs September</span></div>
+        <div class="kpi"><p>Net profit</p><b class="big">BHD 710</b><span class="chg down">▼ 32% vs September</span></div>
+        <div class="kpi"><p>Cash in the bank</p><b class="big">BHD 4,850</b><span class="chg">≈ 1.1 months of fixed costs</span></div>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <h3>Sales and profit, last 6 months</h3>
+          <div id="chart" class="chart"></div>
+          <div class="legend"><span><i class="l1"></i>Sales</span><span><i class="l2"></i>Net profit</span></div>
+        </div>
+        <div class="card">
+          <h3>⚠️ Early warnings</h3>
+          <ul class="warn">
+            <li class="red"><b>Cost of goods is rising</b><span>38% of sales this month, up from 34%. Milk and cardamom prices went up.</span></li>
+            <li class="amber"><b>Cash cover is thin</b><span>Cash covers about 1.1 months of rent, salaries and bills. Aim for 3 months.</span></li>
+            <li class="amber"><b>Customers owe more</b><span>Money owed by corporate clients rose by BHD 150.</span></li>
+            <li class="green"><b>Loan on track</b><span>Repayments are on time. BHD 5,200 left.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INCOME -->
+    <section id="income" class="tab">
+      <div class="card"><h3>Income statement · October 2026 <em>auto-generated</em></h3>
+      <table>
+        <tr><th>BHD</th><th>Oct</th><th>Sep</th><th>Change</th></tr>
+        <tr><td>Sales</td><td>8,450</td><td>9,100</td><td class="neg">−7.1%</td></tr>
+        <tr><td>Cost of goods sold</td><td>(3,210)</td><td>(3,094)</td><td class="neg">+3.7%</td></tr>
+        <tr class="sub"><td>Gross profit</td><td>5,240</td><td>6,006</td><td class="neg">−12.8%</td></tr>
+        <tr><td>Rent</td><td>(1,200)</td><td>(1,200)</td><td>0%</td></tr>
+        <tr><td>Salaries</td><td>(2,400)</td><td>(2,400)</td><td>0%</td></tr>
+        <tr><td>Utilities</td><td>(380)</td><td>(410)</td><td class="pos">−7.3%</td></tr>
+        <tr><td>Marketing</td><td>(250)</td><td>(300)</td><td class="pos">−16.7%</td></tr>
+        <tr><td>Other expenses</td><td>(180)</td><td>(206)</td><td class="pos">−12.6%</td></tr>
+        <tr class="sub"><td>Operating profit before depreciation</td><td>830</td><td>1,490</td><td class="neg">−44.3%</td></tr>
+        <tr><td>Depreciation</td><td>(120)</td><td>(120)</td><td>0%</td></tr>
+        <tr class="total"><td>Net profit</td><td>710</td><td>1,370</td><td class="neg">−48.2%</td></tr>
+      </table></div>
+    </section>
+
+    <!-- BALANCE -->
+    <section id="balance" class="tab">
+      <div class="card"><h3>Balance sheet · 31 October 2026 <em>auto-generated</em></h3>
+      <table>
+        <tr><th>BHD</th><th>31 Oct</th></tr>
+        <tr class="sub"><td>Assets</td><td></td></tr>
+        <tr><td>Cash</td><td>4,850</td></tr>
+        <tr><td>Money owed by customers</td><td>620</td></tr>
+        <tr><td>Stock</td><td>1,340</td></tr>
+        <tr><td>Equipment (after depreciation)</td><td>9,600</td></tr>
+        <tr class="total"><td>Total assets</td><td>16,410</td></tr>
+        <tr class="sub"><td>Liabilities</td><td></td></tr>
+        <tr><td>Money owed to suppliers</td><td>1,580</td></tr>
+        <tr><td>Bank loan</td><td>5,200</td></tr>
+        <tr class="total"><td>Total liabilities</td><td>6,780</td></tr>
+        <tr class="sub"><td>Owner's equity</td><td>9,630</td></tr>
+        <tr class="total"><td>Liabilities + equity</td><td>16,410 ✅</td></tr>
+      </table></div>
+    </section>
+
+    <!-- CASH -->
+    <section id="cash" class="tab">
+      <div class="card"><h3>Cash flow statement · October 2026 <em>auto-generated</em></h3>
+      <table>
+        <tr><th>BHD</th><th>Oct</th></tr>
+        <tr><td>Net profit</td><td>710</td></tr>
+        <tr><td>Add back depreciation</td><td>120</td></tr>
+        <tr><td>More money owed by customers</td><td>(150)</td></tr>
+        <tr><td>More stock bought</td><td>(210)</td></tr>
+        <tr><td>More owed to suppliers</td><td>90</td></tr>
+        <tr class="sub"><td>Cash from operations</td><td>560</td></tr>
+        <tr><td>New coffee grinder</td><td>(400)</td></tr>
+        <tr class="sub"><td>Cash from investing</td><td>(400)</td></tr>
+        <tr><td>Loan repayment</td><td>(300)</td></tr>
+        <tr class="sub"><td>Cash from financing</td><td>(300)</td></tr>
+        <tr class="total"><td>Net change in cash</td><td>(140)</td></tr>
+        <tr><td>Cash at start of month</td><td>4,990</td></tr>
+        <tr class="total"><td>Cash at end of month</td><td>4,850 ✅</td></tr>
+      </table></div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="tab">
+      <div class="grid2">
+        <div class="card ai">
+          <h3>🤖 Your month in plain words</h3>
+          <p>October was a slower month. Sales fell 7% after the busy September, mostly on weekdays.</p>
+          <p>The bigger issue is costs: every BHD 1 of sales now costs 38 fils in ingredients, up from 34. If this continues, you lose about <b>BHD 340 of profit a month</b>.</p>
+          <p>Your business is still profitable, and the loan is on track.</p>
+        </div>
+        <div class="card ai">
+          <h3>✅ Suggested next steps</h3>
+          <ol>
+            <li>Ask your two milk suppliers for a fixed 3-month price.</li>
+            <li>Raise karak by 50 fils: a 5% drop in cups would still leave you ahead.</li>
+            <li>Send reminders to the 3 corporate clients who owe BHD 620.</li>
+            <li>Keep BHD 500 a month aside until cash covers 3 months of fixed costs.</li>
+          </ol>
+          <div class="ask">💬 Ask: "What if I hire one more barista?"</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXCEL -->
+    <section id="excel" class="tab">
+      <div class="grid2">
+        <div class="card">
+          <h3>📗 Two-way sync with Excel</h3>
+          <p class="muted">Keep using your own spreadsheet. Changes in Excel update the app, and the app writes the three statements back into the file.</p>
+          <ul class="steps">
+            <li><b>1</b> Upload or link your sales and expenses sheet</li>
+            <li><b>2</b> The app sorts each line into the right account</li>
+            <li><b>3</b> Statements and warnings update in seconds</li>
+            <li><b>4</b> Everything is written back to your Excel file</li>
+          </ul>
+          <a class="btn" href="assets/My_Performance_Sample.xlsx" download>⬇ Download the sample Excel file</a>
+        </div>
+        <div class="card">
+          <h3>🏛️ The bigger picture</h3>
+          <p>With owners' consent, anonymous monthly figures from many small businesses could give a government partner such as Tamkeen an up-to-date picture of how SMEs in Bahrain are doing, by sector and area, with early warning signs before businesses fail.</p>
+          <div class="pill">Concept · data is a sample business</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script>
+document.querySelectorAll('#nav a').forEach(a=>a.onclick=()=>{
+  document.querySelectorAll('#nav a').forEach(x=>x.classList.remove('on'));a.classList.add('on');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.id===a.dataset.tab));
+});
+const m=['May','Jun','Jul','Aug','Sep','Oct'],s=[7800,7200,6900,7600,9100,8450],p=[620,410,260,540,1370,710];
+const W=560,H=240,max=10000,bw=34;let g=`<svg viewBox="0 0 ${W} ${H+30}" width="100%">`;
+[0,5000,10000].forEach(v=>{const y=H-v/max*H+5;g+=`<line x1="40" x2="${W}" y1="${y}" y2="${y}" stroke="#E4E1D8"/><text x="0" y="${y+4}" font-size="12" fill="#8A877E">${v/1000}k</text>`});
+m.forEach((mm,i)=>{const x=60+i*85,hs=s[i]/max*H,hp=p[i]/max*H;
+g+=`<rect x="${x}" y="${H-hs+5}" width="${bw}" height="${hs}" rx="6" fill="${i==5?'#1F7A5C':'#A9D5C4'}"/>`;
+g+=`<rect x="${x+bw+4}" y="${H-hp+5}" width="${bw/2}" height="${hp}" rx="4" fill="#E0892B"/>`;
+g+=`<text x="${x+bw/2+6}" y="${H+24}" font-size="13" text-anchor="middle" fill="#55524A">${mm}</text>`});
+document.getElementById('chart').innerHTML=g+'</svg>';
+</script>
+</body>
+</html>
